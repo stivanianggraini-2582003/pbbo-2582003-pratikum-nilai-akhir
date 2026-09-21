@@ -23,4 +23,18 @@ public class NilaiAkhir {
 
         System.out.print("Masukkan nilai Final: ");
         double nilaiFinal = scanner.nextDouble();
-    }
+        // Menghitung nilai akhir
+        double akhir = praktikum * BOBOT_PRAKTIKUM
+                + tugas * BOBOT_TUGAS
+                + mid * BOBOT_MID
+                + nilaiFinal * BOBOT_FINAL;
+
+        // Percobaan menggunakan int
+        // int hasilInt = praktikum * 30 / 100;
+
+        // Pembulatan dan selisih nilai
+        int dibulatkan = (int) Math.round(akhir);
+        double selisih = akhir - dibulatkan;
+
+        // Augmented assignment
+        akhir += 0;
