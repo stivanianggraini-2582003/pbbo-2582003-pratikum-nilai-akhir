@@ -38,5 +38,16 @@ public class NilaiAkhir {
 
         // Augmented assignment
         akhir += 0;
+
+        // Menentukan status kelulusan dan menampilkan hasil
+        boolean lulus = akhir >= 60;
+
+        System.out.println("\n=== HASIL NILAI AKHIR ===");
+        System.out.println("Nilai akhir      : " + akhir);
+        System.out.println("Nilai dibulatkan : " + dibulatkan);
+        System.out.println("Selisih          : " + selisih);
+        System.out.println("Status kelulusan : " + lulus);
+
+        scanner.close();
     }
 }
