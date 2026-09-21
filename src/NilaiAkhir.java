@@ -5,7 +5,7 @@ public class NilaiAkhir {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Konstanta bobot dan input nilai
+        // Konstanta bobot penilaian dan input nilai
         final double BOBOT_PRAKTIKUM = 0.30;
         final double BOBOT_TUGAS = 0.20;
         final double BOBOT_MID = 0.20;
@@ -23,3 +23,4 @@ public class NilaiAkhir {
         System.out.print("Masukkan nilai Final: ");
         double nilaiFinal = scanner.nextDouble();
     }
+}
