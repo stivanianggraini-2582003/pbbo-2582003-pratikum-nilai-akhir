@@ -5,48 +5,23 @@ public class NilaiAkhir {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Konstanta bobot penilaian
+        // Konstanta bobot penilaian setiap komponen.
         final double BOBOT_PRAKTIKUM = 0.30;
         final double BOBOT_TUGAS = 0.20;
         final double BOBOT_MID = 0.20;
         final double BOBOT_FINAL = 0.30;
 
-        // Input nilai
-        System.out.print("Masukkan nilai Praktikum: ");
+        // Input empat nilai menggunakan double agar menerima nilai desimal.
+        System.out.print("Nilai praktikum : ");
         double praktikum = scanner.nextDouble();
 
-        System.out.print("Masukkan nilai Tugas: ");
+        System.out.print("Nilai tugas     : ");
         double tugas = scanner.nextDouble();
 
-        System.out.print("Masukkan nilai MID: ");
+        System.out.print("Nilai MID       : ");
         double mid = scanner.nextDouble();
 
-        System.out.print("Masukkan nilai Final: ");
-        double nilaiFinal = scanner.nextDouble();
-        // Menghitung nilai akhir
-        double akhir = praktikum * BOBOT_PRAKTIKUM
-                + tugas * BOBOT_TUGAS
-                + mid * BOBOT_MID
-                + nilaiFinal * BOBOT_FINAL;
-
-        // Percobaan menggunakan int
-        // int hasilInt = praktikum * 30 / 100;
-
-        // Pembulatan dan selisih nilai
-        int dibulatkan = (int) Math.round(akhir);
-        double selisih = akhir - dibulatkan;
-
-        // Augmented assignment
-        akhir += 0;
-        // Menentukan status kelulusan dan menampilkan hasil
-        boolean lulus = akhir >= 60;
-
-        System.out.println("\n=== HASIL NILAI AKHIR ===");
-        System.out.println("Nilai akhir      : " + akhir);
-        System.out.println("Nilai dibulatkan : " + dibulatkan);
-        System.out.println("Selisih          : " + selisih);
-        System.out.println("Status kelulusan : " + lulus);
-
-        scanner.close();
+        System.out.print("Nilai final     : ");
+        double finalNilai = scanner.nextDouble();
     }
 }
