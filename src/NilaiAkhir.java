@@ -39,4 +39,24 @@ public class NilaiAkhir {
 
         // Menghitung selisih antara nilai akhir dan nilai yang sudah dibulatkan.
         double selisih = akhir - dibulatkan;
+        // Menentukan status kelulusan menggunakan boolean tanpa if.
+        boolean lulus = akhir >= 60;
+
+        // Menampilkan seluruh hasil perhitungan.
+        System.out.println();
+        System.out.println("===== NILAI AKHIR =====");
+        System.out.println("Praktikum : " + praktikum + "  (30%)");
+        System.out.println("Tugas     : " + tugas + "  (20%)");
+        System.out.println("MID       : " + mid + "  (20%)");
+        System.out.println("Final     : " + finalNilai + "  (30%)");
+
+        System.out.println();
+        System.out.println("Nilai akhir  : " + akhir);
+        System.out.println("Dibulatkan   : " + dibulatkan);
+        System.out.println("Selisih      : " + selisih);
+        System.out.println("Lulus (>=60) : " + lulus);
+
+        scanner.close();
+    }
+}
 
