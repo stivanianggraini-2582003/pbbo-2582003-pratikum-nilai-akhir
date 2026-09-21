@@ -22,32 +22,5 @@ public class NilaiAkhir {
 
         System.out.print("Masukkan nilai Final: ");
         double nilaiFinal = scanner.nextDouble();
-
-        // Menghitung nilai akhir, pembulatan, dan selisih
-        double akhir = praktikum * BOBOT_PRAKTIKUM
-                + tugas * BOBOT_TUGAS
-                + mid * BOBOT_MID
-                + nilaiFinal * BOBOT_FINAL;
-
-        // Percobaan menggunakan int menghasilkan nilai yang berbeda
-        // karena pembagian bilangan bulat.
-        // int hasilInt = praktikum * 30 / 100;
-
-        int dibulatkan = (int) Math.round(akhir);
-        double selisih = akhir - dibulatkan;
-
-        // Augmented assignment
-        akhir += 0;
-
-        // Menentukan status kelulusan dan menampilkan hasil
-        boolean lulus = akhir >= 60;
-
-        System.out.println("\n=== HASIL NILAI AKHIR ===");
-        System.out.println("Nilai akhir      : " + akhir);
-        System.out.println("Nilai dibulatkan : " + dibulatkan);
-        System.out.println("Selisih          : " + selisih);
-        System.out.println("Status kelulusan : " + lulus);
-
-        scanner.close();
     }
 }
